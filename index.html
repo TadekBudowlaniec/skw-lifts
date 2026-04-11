@@ -99,12 +99,13 @@ nav .container{display:flex;align-items:center;justify-content:space-between}
 
 /* ——— Hero ——— */
 .hero{
-  min-height:100vh;padding:140px 0 80px;position:relative;
+  min-height:100vh;padding:160px 0 90px;position:relative;
   display:grid;place-items:center;
 }
 .hero-inner{
-  display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;width:100%;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;width:100%;
 }
+.hero-text{max-width:640px}
 .eyebrow{
   display:inline-flex;align-items:center;gap:10px;
   padding:8px 16px;border:1px solid rgba(212,175,55,.35);border-radius:999px;
@@ -114,8 +115,8 @@ nav .container{display:flex;align-items:center;justify-content:space-between}
 .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold);animation:pulse 2s infinite}
 @keyframes pulse{50%{transform:scale(1.4);opacity:.6}}
 .hero h1{
-  font-size:clamp(56px,9vw,140px);margin:22px 0 24px;
-  text-transform:uppercase;
+  font-size:clamp(52px,7.2vw,112px);margin:24px 0 26px;
+  text-transform:uppercase;line-height:.95;
 }
 .hero h1 span{display:block}
 .hero p.lead{
@@ -395,7 +396,7 @@ footer small{color:var(--muted);font-size:13px}
 <!-- ====== HERO ====== -->
 <header class="hero">
   <div class="container hero-inner">
-    <div class="reveal">
+    <div class="reveal hero-text">
       <span class="eyebrow"><span class="dot"></span>Trener Personalny · Online &amp; Offline</span>
       <h1>
         <span class="gold-grad">Rzeźbimy</span>
